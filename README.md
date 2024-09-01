@@ -41,7 +41,9 @@
    ```
 
 ### API配置
-1.使用自己的OpenAI API替换src/config.json下的对应变量，以实现对模型的调用。
+1.使用自己的OpenAI API替换   ```shell
+   src/config.json
+   ```下的对应变量，以实现对模型的调用。
 2.同时，如果需要使用对Github工程的访问功能，需要申请对应的Github API KEY。
    ```shell
    {
