@@ -35,6 +35,11 @@
    ```
 
 2. 安装依赖。该程序已在Windows 11和ubuntu18.04测试。所需的库及版本：
+   创建conda环境
+      ```shell
+   conda create -n env_name python=3.10
+   conda activate env_name
+   ```
    可以直接使用以下命令安装
    ```shell
    pip install -r requirements.txt
