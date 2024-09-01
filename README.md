@@ -1,4 +1,4 @@
-**Read in other language: [中文](README_CN.md)**
+**更换阅读语言: [中文](README_CN.md)**
 
 # Engineering-Code-Analysis
 使用Openai有关项目工程的代码解释器
