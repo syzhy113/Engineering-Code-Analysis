@@ -8,7 +8,8 @@
 无文件大小限制,能高效解析GitHub项目,
 同时保证数据仅存储在本地以提高安全性。
 
-![工作流框架](image/image.png)
+工作流框架
+   ![工作流框架](image/image.png)
 ![notebook_gif_demo](image/1.gif)
 
 ## 优势
