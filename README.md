@@ -9,7 +9,7 @@
 同时保证数据仅存储在本地以提高安全性。
 
 [//]: # (图片一)
-[//]: # (![notebook_gif_demo]&#40;example_img/save_to_notebook_demo.gif&#41;)
+![notebook_gif_demo](image/1.gif)
 
 ## 优势
 
