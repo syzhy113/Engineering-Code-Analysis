@@ -6,6 +6,8 @@
 *.exe
 *.o
 *.so
+.idea
+__pycache__
 
 # Packages #
 ############
