@@ -15,11 +15,11 @@ This project is an innovative localized AI assistant system designed to overcome
 
 ## Main Advantages
 
-- **Increased File Size and Access Speed**：Say goodbye to the 100MB file size limit and internet speed issues. With the local version, everything is under your control.
-- **Explicit Network Connection Access**：The official version cannot explicitly access web links and is not friendly to GitHub projects. This project can analyze GitHub projects.
-- **Direct Access to Local Files**：Runs in your local directory, making it convenient for personalized file directory operations and real-time file directory analysis.
--  **Data Security**：The code runs locally, eliminating the need to upload files to the internet, which enhances data security.
--  **Model Support**：Access via API, allowing the use of ```GPT-4``` without needing an ```OpenAI Plus``` subscription.
+- **Increased File Size and Access Speed**:Say goodbye to the 100MB file size limit and internet speed issues. With the local version, everything is under your control.
+- **Explicit Network Connection Access**:The official version cannot explicitly access web links and is not friendly to GitHub projects. This project can analyze GitHub projects.
+- **Direct Access to Local Files**:Runs in your local directory, making it convenient for personalized file directory operations and real-time file directory analysis.
+-  **Data Security**:The code runs locally, eliminating the need to upload files to the internet, which enhances data security.
+-  **Model Support**:Access via API, allowing the use of ```GPT-4``` without needing an ```OpenAI Plus``` subscription.
 
 ## Precautions
 AI-generated code executed on local devices, without human review, may pose security risks. You are responsible for any consequences arising from running such unreviewed programs.
