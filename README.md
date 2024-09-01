@@ -9,7 +9,9 @@
 同时保证数据仅存储在本地以提高安全性。
 
 ### 工作流框架
-![工作流框架](image/image.png)#pic_center)
+<p align="center">
+   ![工作流框架](image/image.png)
+</p>
 ![notebook_gif_demo](image/1.gif)
 
 ## 优势
