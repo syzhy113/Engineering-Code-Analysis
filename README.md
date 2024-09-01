@@ -1,7 +1,7 @@
 **更换阅读语言: [中文](README_CN.md)**
 
 # Engineering-Code-Analysis
-Here's the translated version of your content while preserving the original formatting:
+Automated and fast parsing of local project directories and GitHub directories, one-click deployment of local parsing with AutoGPT:
 
 ## Introduction
 
