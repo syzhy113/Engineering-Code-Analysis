@@ -104,5 +104,45 @@
               -- function extract_between_markers 函数的作用是从字符串中提取标记之间的子字符串
               -- function run 函数的作用是运行智能体
       ```
+   1. ：
+   ```shell
+   🤖：有什么可以帮您？
+   👨：https://github.com/raghakot/keras-resnet解析一下这个工程
+   🤖：该工程实现了基于Keras的残差网络，支持theano和tensorflow后端。核心代码结构如下：
+
+```
+——resnet.py 文件作用是实现ResNet模型
+   --class ResnetBuilder 类的作用是构建各种版本的ResNet模型
+        -- function build 函数的作用是构建自定义的ResNet架构
+        -- function build_resnet_18 函数的作用是构建ResNet18模型
+        -- function build_resnet_34 函数的作用是构建ResNet34模型
+        -- function build_resnet_50 函数的作用是构建ResNet50模型
+        -- function build_resnet_101 函数的作用是构建ResNet101模型
+        -- function build_resnet_152 函数的作用是构建ResNet152模型
+   -- function _bn_relu 函数的作用是构建一个BN -> ReLU块
+   -- function _conv_bn_relu 函数的作用是构建一个Conv -> BN -> ReLU块
+   -- function _bn_relu_conv 函数的作用是构建一个BN -> ReLU -> Conv块
+   -- function _shortcut 函数的作用是在输入和残差块之间添加捷径并将它们合并
+   -- function _residual_block 函数的作用是构建一个带有重复瓶颈块的残差块
+   -- function basic_block 函数的作用是用于构建层数≤34的ResNet的基本3×3卷积块
+   -- function bottleneck 函数的作用是用于构建层数>34的ResNet的瓶颈架构
+   -- function _handle_dim_ordering 函数的作用是处理图像维度顺序
+   -- function _get_block 函数的作用是获取块函数（basic_block或bottleneck）
+
+——cifar10.py 文件作用是实现Cifar10数据集的训练示例
+   -- 函数和全局变量的作用是定义训练参数、数据预处理和模型训练
+
+——tests/test_resnet.py 文件作用是实现ResNet模型的单元测试
+   -- function _test_model_compile 函数的作用是测试模型的编译
+   -- function test_resnet18 函数的作用是测试ResNet18模型
+   -- function test_resnet34 函数的作用是测试ResNet34模型
+   -- function test_resnet50 函数的作用是测试ResNet50模型
+   -- function test_resnet101 函数的作用是测试ResNet101模型
+   -- function test_resnet152 函数的作用是测试ResNet152模型
+   -- function test_custom1 函数的作用是测试自定义的ResNet模型
+   -- function test_custom2 函数的作用是测试自定义的ResNet模型
+```
+
+      ```
 
 
