@@ -1,43 +1,41 @@
 **更换阅读语言: [中文](README_CN.md)**
 
 # Engineering-Code-Analysis
-使用Openai有关项目工程的代码解释器
+Here's the translated version of your content while preserving the original formatting:
 
-## 简介
+## Introduction
 
-本项目是一款创新的本地化AI助手系统，
-旨在突破传统在线AI服务的局限。它支持直接访问本地文件夹，对本地项目结构内容进行解析。
-无文件大小限制，能高效解析GitHub项目，同时保证数据仅存储在本地以提高安全性。
+This project is an innovative localized AI assistant system designed to overcome the limitations of traditional online AI services. It supports direct access to local folders and can analyze the content of local project structures. With no file size limitations, it efficiently parses GitHub projects while ensuring that data is stored locally to enhance security.
 
-### 工作流框架
+### Workflow Framework
 ![工作流框架](image/image.png)
 
 ### Demo
 ![notebook_gif_demo](image/1.gif)
 
-## 优势
+## Main Advantages
 
-- **文件大小及访问速度提升**：告别100MB文件大小限制和网速问题。使用本地版，一切尽在掌控之中。
-- **显式访问网络连接**：官方无法显式访问网页链接，对GitHub项目不友好，该工程可以对Github项目进行解析。
-- **直接访问本地文件**：在您本地目录中运行，方便进行个性化文件目录操作，实时解析文件目录。
--  **数据安全**：代码在本地运行，无需将文件上至网络，提高了数据的安全性。
--  **模型支持**：使用API进行访问，无需```OpenAI plus```也可以使用```GPT4```。
+- **Increased File Size and Access Speed**：Say goodbye to the 100MB file size limit and internet speed issues. With the local version, everything is under your control.
+- **Explicit Network Connection Access**：The official version cannot explicitly access web links and is not friendly to GitHub projects. This project can analyze GitHub projects.
+- **Direct Access to Local Files**：Runs in your local directory, making it convenient for personalized file directory operations and real-time file directory analysis.
+-  **Data Security**：The code runs locally, eliminating the need to upload files to the internet, which enhances data security.
+-  **Model Support**：Access via API, allowing the use of ```GPT-4``` without needing an ```OpenAI Plus``` subscription.
 
-## 注意事项
-本地设备上执行AI生成但未经人工审核的代码可能存在安全风险。若未经审核运行程序所产生的所有后果，您需自行承担。
+## Precautions
+AI-generated code executed on local devices, without human review, may pose security risks. You are responsible for any consequences arising from running such unreviewed programs.
 
-## 使用方法
+## Usage
 
-### 安装
+### Installation
 
-1. 克隆本仓库
+1. Clone this repository:
    ```shell
    git clone https://github.com/syzhy113/Engineering-Code-Analysis.git
    cd Engineering-Code-Analys
    ```
 
-2. 安装依赖。该程序已在Windows 11和ubuntu18.04测试。所需的库及版本：
-   创建conda环境
+2. Install dependencies. This program has been tested on Windows 11 and Ubuntu 18.04. Required libraries and versions:
+   Create a conda environment:
       ```shell
    conda create -n env_name python=3.10
    conda activate env_name
@@ -47,11 +45,9 @@
    pip install -r requirements.txt
    ```
 
-### API配置
-1. 使用自己的```OpenAI API```替换 
-```src/config.json ```
-下的对应变量，以实现对模型的调用。<br>
-2. 同时，如果需要使用对Github工程的访问功能，需要申请对应的```Github API KEY```。
+### API Configuration
+1. Replace the corresponding variables in ```src/config.json``` with your own ```OpenAI API``` to enable model calls.<br>
+2. Additionally, if you need to access GitHub projects, you'll need to obtain the corresponding ```Github API KEY```。
    ```shell
    {
      "GIT_KEY": "",
@@ -60,28 +56,28 @@
    }
    ```
 
-## 使用
+## Run
 
-1. 进入`src`目录。
+1. Navigate to the src directory:
    ```shell
    cd src
    ```
 
-2. 运行以下命令：
+2. Run the following command:
    ```shell
    python main.py
    ```
 
-3. 在命令行中，完成对话使用
+3. To complete the conversation in the command line, use:
    ```shell
    🤖：有什么可以帮您？
    👨：
    ```
 
 
-## 示例
+## Example
 
-以下是一个使用本程序进行工程任务分析的示例：
+Here is an example of using this program for engineering task analysis:
 
 1. ：
    ```shell
