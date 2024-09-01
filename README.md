@@ -104,6 +104,5 @@
               -- function extract_between_markers 函数的作用是从字符串中提取标记之间的子字符串
               -- function run 函数的作用是运行智能体
       ```
-   ```
 
 
