@@ -111,21 +111,15 @@ Here is an example of using this program for engineering task analysis:
 
 安装和使用方法
 1. 克隆本仓库：
-   ```shell
    git clone https://github.com/raghakot/keras-resnet.git
    cd keras-resnet
-   ```
 
 2. 使用pip安装依赖：
-   ```shell
    pip install -r requirements.txt
-   ```
 
 3. 使用方法：
    - 训练ResNet-18模型在CIFAR-10数据集上：
-     ```shell
      THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python cifar10.py
-     ```
 
 核心代码结构
 
