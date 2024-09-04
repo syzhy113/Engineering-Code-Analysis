@@ -40,7 +40,7 @@ AI-generated code executed on local devices, without human review, may pose secu
    conda create -n env_name python=3.10
    conda activate env_name
    ```
-   可以直接使用以下命令安装
+   You can install it directly using the following command
    ```shell
    pip install -r requirements.txt
    ```
