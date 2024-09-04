@@ -38,6 +38,53 @@
 18. 核心代码结构要放在最终结论中。
 19. 如果需要访问代码，不要分开单次访问，一个文件夹下的代码需要一起访问。
 20. 如果任务工程在github中，必须先访问README
+21. 必须要列出如何使用这个工程，包括如何安装，工程结构，并介绍这个工程是干什么的例如：
+    ## 使用方法
+
+### 安装
+
+1. 克隆本仓库
+   ```shell
+   git clone https://github.com/syzhy113/Engineering-Code-Analysis.git
+   cd Engineering-Code-Analys
+   ```
+
+2. 安装依赖。该程序已在Windows 11和ubuntu18.04测试。所需的库及版本：
+   创建conda环境
+      ```shell
+   conda create -n env_name python=3.10
+   conda activate env_name
+   ```
+   可以直接使用以下命令安装
+   ```shell
+   pip install -r requirements.txt
+   ```
+
+### API配置
+1. 使用自己的```OpenAI API```替换
+```src/config.json ```
+下的对应变量，以实现对模型的调用。<br>
+2. 同时，如果需要使用对Github工程的访问功能，需要申请对应的```Github API KEY```。
+
+## 使用
+
+1. 进入`src`目录。
+   ```shell
+   cd src
+   ```
+
+2. 运行以下命令：
+   ```shell
+   python main.py
+   ```
+
+3. 在命令行中，完成对话使用
+   ```shell
+   🤖：有什么可以帮您？
+   👨：
+   ```
+
+
 
 当前的任务执行记录:
 <history>
