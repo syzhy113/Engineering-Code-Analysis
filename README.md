@@ -107,67 +107,67 @@ Here is an example of using this program for engineering task analysis:
    🤖：有什么可以帮您？
    👨：https://github.com/raghakot/keras-resnet解析一下这个工程
    🤖：工程基本信息该工程是使用Keras实现的残差网络（ResNet），支持Theano和TensorFlow后端。主要目的是提供一种基于Keras的方便的ResNet实现。
-安装和使用方法
-1. 克隆本仓库：
-   git clone https://github.com/raghakot/keras-resnet.git
-   cd keras-resnet
-
-2. 使用pip安装依赖：
-   pip install -r requirements.txt
-
-3. 使用方法：
-   - 训练ResNet-18模型在CIFAR-10数据集上：
-     THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python cifar10.py
-
-核心代码结构
-
-cifar10.py
-- 作用：训练ResNet-18模型在CIFAR-10数据集上。
-  - 加载和预处理CIFAR-10数据。
-  - 构建ResNet-18模型。
-  - 使用数据增广（可选）。
-  - 训练模型并保存训练日志。
-
-resnet.py
-- 作用：定义ResNet模型的构建逻辑。
-  - _bn_relu：构建Batch Normalization和ReLU激活块。
-  - _conv_bn_relu：构建卷积、Batch Normalization和ReLU激活块。
-  - _bn_relu_conv：构建Batch Normalization、ReLU激活和卷积块。
-  - _shortcut：构建残差块的shortcut连接。
-  - _residual_block：构建残差块。
-  - basic_block：定义基本残差块。
-  - bottleneck：定义瓶颈残差块。
-  - _handle_dim_ordering：处理不同的图像维度顺序。
-  - ResnetBuilder：提供构建不同深度ResNet模型的方法，如ResNet-18、ResNet-34、ResNet-50等。
-
-tests/test_resnet.py
-- 作用：测试ResNet模型的构建和编译。
-  - 定义了多个测试函数，测试不同深度的ResNet模型（如ResNet-18、ResNet-34、ResNet-50等）的构建和编译。
-  - 使用pytest框架进行测试。
-
-核心代码结构图
-plaintext
-── cifar10.py (训练ResNet-18模型在CIFAR-10数据集上)
-    -- 加载和预处理数据
-    -- 构建和训练模型
-
-── resnet.py (定义ResNet模型的构建逻辑)
-    -- class ResnetBuilder (提供构建ResNet模型的方法)
-        -- function build (构建ResNet模型的核心方法)
-        -- function build_resnet_18 (构建ResNet-18模型)
-        -- function build_resnet_34 (构建ResNet-34模型)
-        -- function build_resnet_50 (构建ResNet-50模型)
-        -- function build_resnet_101 (构建ResNet-101模型)
-        -- function build_resnet_152 (构建ResNet-152模型)
-
-── tests/test_resnet.py (测试ResNet模型的构建和编译)
-    -- function test_resnet18 (测试ResNet-18模型)
-    -- function test_resnet34 (测试ResNet-34模型)
-    -- function test_resnet50 (测试ResNet-50模型)
-    -- function test_resnet101 (测试ResNet-101模型)
-    -- function test_resnet152 (测试ResNet-152模型)
-    -- function test_custom1 (自定义测试1)
-    -- function test_custom2 (自定义测试2)
+         安装和使用方法
+         1. 克隆本仓库：
+            git clone https://github.com/raghakot/keras-resnet.git
+            cd keras-resnet
+         
+         2. 使用pip安装依赖：
+            pip install -r requirements.txt
+         
+         3. 使用方法：
+            - 训练ResNet-18模型在CIFAR-10数据集上：
+              THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python cifar10.py
+         
+         核心代码结构
+         
+         cifar10.py
+         - 作用：训练ResNet-18模型在CIFAR-10数据集上。
+           - 加载和预处理CIFAR-10数据。
+           - 构建ResNet-18模型。
+           - 使用数据增广（可选）。
+           - 训练模型并保存训练日志。
+         
+         resnet.py
+         - 作用：定义ResNet模型的构建逻辑。
+           - _bn_relu：构建Batch Normalization和ReLU激活块。
+           - _conv_bn_relu：构建卷积、Batch Normalization和ReLU激活块。
+           - _bn_relu_conv：构建Batch Normalization、ReLU激活和卷积块。
+           - _shortcut：构建残差块的shortcut连接。
+           - _residual_block：构建残差块。
+           - basic_block：定义基本残差块。
+           - bottleneck：定义瓶颈残差块。
+           - _handle_dim_ordering：处理不同的图像维度顺序。
+           - ResnetBuilder：提供构建不同深度ResNet模型的方法，如ResNet-18、ResNet-34、ResNet-50等。
+         
+         tests/test_resnet.py
+         - 作用：测试ResNet模型的构建和编译。
+           - 定义了多个测试函数，测试不同深度的ResNet模型（如ResNet-18、ResNet-34、ResNet-50等）的构建和编译。
+           - 使用pytest框架进行测试。
+         
+         核心代码结构图
+         plaintext
+         ── cifar10.py (训练ResNet-18模型在CIFAR-10数据集上)
+             -- 加载和预处理数据
+             -- 构建和训练模型
+         
+         ── resnet.py (定义ResNet模型的构建逻辑)
+             -- class ResnetBuilder (提供构建ResNet模型的方法)
+                 -- function build (构建ResNet模型的核心方法)
+                 -- function build_resnet_18 (构建ResNet-18模型)
+                 -- function build_resnet_34 (构建ResNet-34模型)
+                 -- function build_resnet_50 (构建ResNet-50模型)
+                 -- function build_resnet_101 (构建ResNet-101模型)
+                 -- function build_resnet_152 (构建ResNet-152模型)
+         
+         ── tests/test_resnet.py (测试ResNet模型的构建和编译)
+             -- function test_resnet18 (测试ResNet-18模型)
+             -- function test_resnet34 (测试ResNet-34模型)
+             -- function test_resnet50 (测试ResNet-50模型)
+             -- function test_resnet101 (测试ResNet-101模型)
+             -- function test_resnet152 (测试ResNet-152模型)
+             -- function test_custom1 (自定义测试1)
+             -- function test_custom2 (自定义测试2)
 ```
 
 
