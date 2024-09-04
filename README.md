@@ -106,7 +106,7 @@ Here is an example of using this program for engineering task analysis:
    ```shell
    🤖：有什么可以帮您？
    👨：https://github.com/raghakot/keras-resnet解析一下这个工程
-   🤖：## 工程基本信息
+   🤖：工程基本信息
 该工程是使用Keras实现的残差网络（ResNet），支持Theano和TensorFlow后端。主要目的是提供一种基于Keras的方便的ResNet实现。
 
 安装和使用方法
