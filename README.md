@@ -13,6 +13,8 @@ This project is an innovative localized AI assistant system designed to overcome
 ### Demo
 ![notebook_gif_demo](image/1.gif)
 
+![notebook_gif_demo](image/2.gif)
+
 ## Main Advantages
 
 - **Increased File Size and Access Speed**:Say goodbye to the 100MB file size limit and internet speed issues. With the local version, everything is under your control.
