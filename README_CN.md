@@ -59,6 +59,9 @@
      "GIT_KEY": "",
      "OPENAI_API_KEY": "",
      "OPENAI_BASE_URL": ""
+     "LANGFUSE_PUBLIC_KEY": "",
+     "LANGFUSE_SECRET_KEY": "",
+     "LANGFUSE_HOST": ""
    }
    ```
 
