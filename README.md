@@ -59,7 +59,7 @@ AI-generated code executed on local devices, without human review, may pose secu
    ```
 
 ## Run
-
+### Use it directly from the command line
 1. Navigate to the src directory:
    ```shell
    cd src
@@ -75,6 +75,18 @@ AI-generated code executed on local devices, without human review, may pose secu
    🤖：有什么可以帮您？
    👨：
    ```
+### Use Web UI
+1. Navigate to the src directory:
+   ```shell
+   cd src
+   ```
+
+2. Run the following command:
+   ```shell
+   python web_ui.py
+   ```
+
+
 
 
 ## Example
