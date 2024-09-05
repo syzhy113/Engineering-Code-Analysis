@@ -33,6 +33,7 @@ langchain-core==0.1.52
 langchain-experimental==0.0.58
 langchain-openai==0.1.6
 langchain-text-splitters==0.0.2
+langfuse==2.46.0
 langgraph==0.2.14
 langsmith==0.1.80
 marshmallow==3.21.3
