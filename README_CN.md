@@ -15,6 +15,8 @@
 ### Demo
 ![notebook_gif_demo](image/1.gif)
 
+![notebook_gif_demo](image/2.gif)
+
 ## 优势
 
 - **文件大小及访问速度提升**：告别100MB文件大小限制和网速问题。使用本地版，一切尽在掌控之中。
