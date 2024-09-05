@@ -55,6 +55,9 @@ AI-generated code executed on local devices, without human review, may pose secu
      "GIT_KEY": "",
      "OPENAI_API_KEY": "",
      "OPENAI_BASE_URL": ""
+     "LANGFUSE_PUBLIC_KEY": "",
+     "LANGFUSE_SECRET_KEY": "",
+     "LANGFUSE_HOST": ""
    }
    ```
 
